@@ -1,0 +1,23 @@
+PODS:
+  - CoinpaprikaAPI/Networking (2.1.1)
+  - CoinSwitchAPI (1.0):
+    - CoinpaprikaAPI/Networking
+
+DEPENDENCIES:
+  - CoinSwitchAPI (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CoinpaprikaAPI
+
+EXTERNAL SOURCES:
+  CoinSwitchAPI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoinpaprikaAPI: a64a077ddebafc2b926230307ce0f715a8a91cee
+  CoinSwitchAPI: 293b8624939f29be6fc6f259cf1dee53658fb9a4
+
+PODFILE CHECKSUM: 4a7224f421a87c044557234cc3086cb2d4ca9d62
+
+COCOAPODS: 1.7.0.rc.1

@@ -1,0 +1,1062 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0104C18425BA5D1D17F9133DF38CD380 /* CodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBD2BB9673CAF3A4E0487CD0C79CE90 /* CodableModel.swift */; };
+		0ECF10F03C929F15BC3DB349B14130DD /* CoinpaprikaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE365316A23A9D67871A64D9658651CF /* CoinpaprikaAPI.framework */; };
+		15D0B4E894293712D0C509CC3AD9FAF7 /* Pods-CoinSwitchAPI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCDC118445AF1DF57440EB8163D3EB5 /* Pods-CoinSwitchAPI_Example-dummy.m */; };
+		1D5BF4DF26F8E47776DD98338EE18C8E /* CoinSwitchAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBA0955A04E6CA10E34E1C63011D14 /* CoinSwitchAPI-dummy.m */; };
+		425C32A1ED0AEE26AB1EBBF1A02CBC06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050DEB17C209CDCB87163F6F1C0566E /* Foundation.framework */; };
+		468E382BB8A1A810B4AC8FA23CE24DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050DEB17C209CDCB87163F6F1C0566E /* Foundation.framework */; };
+		473CEEFE641878A158A361A60E286FCB /* CoinpaprikaAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB14A797C9C5E4054D5F632754F3124B /* CoinpaprikaAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4769F091ADEB96E5951C7D7E45EB6E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050DEB17C209CDCB87163F6F1C0566E /* Foundation.framework */; };
+		4AA27F74CD81BADDA3D3EE7C76244D3C /* Pods-CoinSwitchAPI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D4AECA4D506E3E3B0D859DCFA12D9A /* Pods-CoinSwitchAPI_Tests-dummy.m */; };
+		6BF58D8E6D074DCCED16749C0AC5D22E /* CoinpaprikaAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C5D88212363E69D0812F36A7C9E216 /* CoinpaprikaAPI-dummy.m */; };
+		7093C5D5B8CD6BA4002F88AF69077766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050DEB17C209CDCB87163F6F1C0566E /* Foundation.framework */; };
+		898EB62F4D92057DECE50BB5EE687D82 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3EA59D476A7D1BB66970D57E36143 /* Order.swift */; };
+		8F56E1F9D7FCDFBCCD23EDF4DE8946AE /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06776FF9F6A108641B138CB4B820837A /* Coin.swift */; };
+		9305C8F934652E94070CA21A0C5ADE1C /* CoinSwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2DA4C95A6081088A6797832CADB1CE /* CoinSwitchAPI.swift */; };
+		9E103F8B0B9FB8E141399C416C7D14EC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E07EF254D987606418B8171F35FF2 /* Errors.swift */; };
+		9E8C5AD7DDAE4566B6AD13807862610D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9D5A290696DC13B91782C177EA661 /* Result.swift */; };
+		9F021D867C99F076D85210576CE85B1F /* CoinSwitchAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F99DD5E10C5F1A68567512BAE1CD71E /* CoinSwitchAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC21B5CD3F775C70FCE21B0A1D3A0C23 /* Pods-CoinSwitchAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F27ED7EC46305846AA1237EF9007BB5 /* Pods-CoinSwitchAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D95C22C3228ABD6E00B86E5D /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22C2228ABD6E00B86E5D /* Pair.swift */; };
+		D95C22C5228ABDA600B86E5D /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22C4228ABDA600B86E5D /* Rate.swift */; };
+		D95C22C7228ABE5E00B86E5D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22C6228ABE5E00B86E5D /* Account.swift */; };
+		D95C22C9228AC02200B86E5D /* NewOrderParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22C8228AC02200B86E5D /* NewOrderParams.swift */; };
+		D95C22CB228AC3DF00B86E5D /* Envelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22CA228AC3DF00B86E5D /* Envelope.swift */; };
+		D95C22CD228ACA4100B86E5D /* CoinSwitchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22CC228ACA4100B86E5D /* CoinSwitchRequest.swift */; };
+		D95C22CF228ACC8E00B86E5D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22CE228ACC8E00B86E5D /* Error.swift */; };
+		D95C22D1228AD40C00B86E5D /* ItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C22D0228AD40C00B86E5D /* ItemsList.swift */; };
+		E519C3CCE3C1D1AF36E0863E2A0F41A6 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F1379D729DB5929E561A4121205AF /* Credentials.swift */; };
+		EF09B2B3644C57C3EFE636F05A58B867 /* Pods-CoinSwitchAPI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 859F4581E0F19641319F4D71306FFE78 /* Pods-CoinSwitchAPI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BD737729AC48CCE0207E40E28C9084 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE829A0A7E3BB4A7BD77692FCE401F /* Request.swift */; };
+		F848975BAE4608EB2507B36953F457A1 /* NewOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5E00D647C796EBA6E9FA556DACEDB /* NewOrder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		293923E812590E5E91CB7E8C1EAAE43B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F70FBC5EA7ACED1E281E02BC97316AF;
+			remoteInfo = "Pods-CoinSwitchAPI_Example";
+		};
+		2EF2CE89BFF96C4D6345A8B7E66D02C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F9FBEF3C17D92A958CCC2DE8DB82D7;
+			remoteInfo = CoinpaprikaAPI;
+		};
+		C314BF68DD19768AE4D0E3B38E9C93CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F9FBEF3C17D92A958CCC2DE8DB82D7;
+			remoteInfo = CoinpaprikaAPI;
+		};
+		CABFDACEB7D4A93680C8C549B0766616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C5942A646EA1EE37F9DA52D56A3EF89;
+			remoteInfo = CoinSwitchAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03719FC9EFA0DECBF2D313DB799DB5D6 /* CoinSwitchAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoinSwitchAPI-Info.plist"; sourceTree = "<group>"; };
+		06776FF9F6A108641B138CB4B820837A /* Coin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		0BBBE74E12AF7939AF597A59855BA2D6 /* Pods_CoinSwitchAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinSwitchAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4D14F332AA357D471EE688306B73B4 /* Pods_CoinSwitchAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinSwitchAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E78D0DB31F4C1851D11019A1E53D7E6 /* Pods-CoinSwitchAPI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoinSwitchAPI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1FE23E52201C5B235666392F518B8436 /* CoinpaprikaAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoinpaprikaAPI.modulemap; sourceTree = "<group>"; };
+		213B4862F33CDB567F552B0E44A50DB4 /* CoinpaprikaAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoinpaprikaAPI-Info.plist"; sourceTree = "<group>"; };
+		2A1F1379D729DB5929E561A4121205AF /* Credentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		2F99DD5E10C5F1A68567512BAE1CD71E /* CoinSwitchAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoinSwitchAPI-umbrella.h"; sourceTree = "<group>"; };
+		3098A56BCACECC85E852F072C004C763 /* Pods-CoinSwitchAPI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoinSwitchAPI_Tests-Info.plist"; sourceTree = "<group>"; };
+		30BE829A0A7E3BB4A7BD77692FCE401F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = CoinpaprikaAPI/Classes/Networking/Request.swift; sourceTree = "<group>"; };
+		3FAB34B5E56CAB784336B23C19238AC2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4AE3EA59D476A7D1BB66970D57E36143 /* Order.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		4D2DA4C95A6081088A6797832CADB1CE /* CoinSwitchAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoinSwitchAPI.swift; path = CoinSwitchAPI/Classes/CoinSwitchAPI.swift; sourceTree = "<group>"; };
+		5AA82F27A08CBD4CAE43CB971C92A13F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		62483539D0CB560BC7BD4C718B51FDC6 /* CoinSwitchAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoinSwitchAPI-prefix.pch"; sourceTree = "<group>"; };
+		744AC8DF72C849576A504BF54AB71F3E /* Pods-CoinSwitchAPI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoinSwitchAPI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A5290A9337E98A2E9362F6122AA7A5A /* CoinpaprikaAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoinpaprikaAPI-prefix.pch"; sourceTree = "<group>"; };
+		7DC349DCA363B728E040C860164987BB /* CoinSwitchAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CoinSwitchAPI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		859F4581E0F19641319F4D71306FFE78 /* Pods-CoinSwitchAPI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoinSwitchAPI_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8EB9D5A290696DC13B91782C177EA661 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = CoinpaprikaAPI/Classes/Networking/Result.swift; sourceTree = "<group>"; };
+		8FFBA0955A04E6CA10E34E1C63011D14 /* CoinSwitchAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoinSwitchAPI-dummy.m"; sourceTree = "<group>"; };
+		9313C3FD6BBF5BCED2C0E3B8E0AC2682 /* Pods-CoinSwitchAPI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoinSwitchAPI_Example-Info.plist"; sourceTree = "<group>"; };
+		94C5D88212363E69D0812F36A7C9E216 /* CoinpaprikaAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoinpaprikaAPI-dummy.m"; sourceTree = "<group>"; };
+		95D4AECA4D506E3E3B0D859DCFA12D9A /* Pods-CoinSwitchAPI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoinSwitchAPI_Tests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F27ED7EC46305846AA1237EF9007BB5 /* Pods-CoinSwitchAPI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoinSwitchAPI_Example-umbrella.h"; sourceTree = "<group>"; };
+		A6F4B5A8B4D3E53EE178DCDB12A6CE6D /* Pods-CoinSwitchAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoinSwitchAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF07F7C37424B5F0A7CA3F2AB271FAF4 /* Pods-CoinSwitchAPI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoinSwitchAPI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BBBD2BB9673CAF3A4E0487CD0C79CE90 /* CodableModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableModel.swift; path = CoinpaprikaAPI/Classes/Networking/CodableModel.swift; sourceTree = "<group>"; };
+		BBD8262D726538BD87E716D51BBBC353 /* Pods-CoinSwitchAPI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoinSwitchAPI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE365316A23A9D67871A64D9658651CF /* CoinpaprikaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinpaprikaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D60EE83A045F892F6CE21BFE2BF3B4 /* CoinSwitchAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoinSwitchAPI.modulemap; sourceTree = "<group>"; };
+		C2DBA69001F90AC35082998CD88765BF /* Pods-CoinSwitchAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoinSwitchAPI_Tests.modulemap"; sourceTree = "<group>"; };
+		C5B2EC0A12489D453C94B24C3E11EBF9 /* CoinSwitchAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoinSwitchAPI.xcconfig; sourceTree = "<group>"; };
+		CAE7423CF36C8F27C11E02031289F186 /* Pods-CoinSwitchAPI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoinSwitchAPI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D050DEB17C209CDCB87163F6F1C0566E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0EBA53FFB36714BCE6BE8C4EEFAB391 /* Pods-CoinSwitchAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoinSwitchAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D1164B00DF05485F84A2501693F83C0D /* Pods-CoinSwitchAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoinSwitchAPI_Example.modulemap"; sourceTree = "<group>"; };
+		D5BEC25A386E5CCE7643B18523C41C17 /* CoinpaprikaAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoinpaprikaAPI.xcconfig; sourceTree = "<group>"; };
+		D95C22C2228ABD6E00B86E5D /* Pair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		D95C22C4228ABDA600B86E5D /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		D95C22C6228ABE5E00B86E5D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D95C22C8228AC02200B86E5D /* NewOrderParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewOrderParams.swift; sourceTree = "<group>"; };
+		D95C22CA228AC3DF00B86E5D /* Envelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envelope.swift; sourceTree = "<group>"; };
+		D95C22CC228ACA4100B86E5D /* CoinSwitchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSwitchRequest.swift; sourceTree = "<group>"; };
+		D95C22CE228ACC8E00B86E5D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		D95C22D0228AD40C00B86E5D /* ItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsList.swift; sourceTree = "<group>"; };
+		DBCDC118445AF1DF57440EB8163D3EB5 /* Pods-CoinSwitchAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoinSwitchAPI_Example-dummy.m"; sourceTree = "<group>"; };
+		E86C2E5EC0249FA0DAF950977CB63DFB /* Pods-CoinSwitchAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoinSwitchAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F07003E2C7E1714C52568C1D857C33D9 /* CoinSwitchAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinSwitchAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F210F8313860C544837FBBF89E5F125B /* Pods-CoinSwitchAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoinSwitchAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F992F348C18E1C75F19D404BF1BF1B /* CoinpaprikaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinpaprikaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62E07EF254D987606418B8171F35FF2 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = CoinpaprikaAPI/Classes/Networking/Errors.swift; sourceTree = "<group>"; };
+		FB14A797C9C5E4054D5F632754F3124B /* CoinpaprikaAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoinpaprikaAPI-umbrella.h"; sourceTree = "<group>"; };
+		FFB5E00D647C796EBA6E9FA556DACEDB /* NewOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NewOrder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B1272EBA627C0BCA1CF41E5F30B3B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7093C5D5B8CD6BA4002F88AF69077766 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645F06D51E5651C87B9F8B74EB23FE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769F091ADEB96E5951C7D7E45EB6E29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814963921ABDA8D1F9239DDA3E88CCA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ECF10F03C929F15BC3DB349B14130DD /* CoinpaprikaAPI.framework in Frameworks */,
+				425C32A1ED0AEE26AB1EBBF1A02CBC06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C494EEBC3216C8819430D0532E90881A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468E382BB8A1A810B4AC8FA23CE24DB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AC1C0F2038879AFDCA122439984F58E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				834658EEA82F3E041BAE1C8BDA586162 /* CoinSwitchAPI */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2B700855946F8495A8FAB703D8A9922C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D95C22CA228AC3DF00B86E5D /* Envelope.swift */,
+				2A1F1379D729DB5929E561A4121205AF /* Credentials.swift */,
+				D95C22CC228ACA4100B86E5D /* CoinSwitchRequest.swift */,
+				D95C22CE228ACC8E00B86E5D /* Error.swift */,
+			);
+			name = Request;
+			path = CoinSwitchAPI/Classes/Request;
+			sourceTree = "<group>";
+		};
+		380C6C9115B092FE0DD7D989236471DC /* CoinpaprikaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				75DD03B77CD0321387543C9FAA05456C /* Networking */,
+				C10D89ABBF6C23019E39226A5CECAF66 /* Support Files */,
+			);
+			path = CoinpaprikaAPI;
+			sourceTree = "<group>";
+		};
+		40D1721B966C87975148BDD50BEFF4CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1D60EE83A045F892F6CE21BFE2BF3B4 /* CoinSwitchAPI.modulemap */,
+				C5B2EC0A12489D453C94B24C3E11EBF9 /* CoinSwitchAPI.xcconfig */,
+				8FFBA0955A04E6CA10E34E1C63011D14 /* CoinSwitchAPI-dummy.m */,
+				03719FC9EFA0DECBF2D313DB799DB5D6 /* CoinSwitchAPI-Info.plist */,
+				62483539D0CB560BC7BD4C718B51FDC6 /* CoinSwitchAPI-prefix.pch */,
+				2F99DD5E10C5F1A68567512BAE1CD71E /* CoinSwitchAPI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CoinSwitchAPI";
+			sourceTree = "<group>";
+		};
+		75DD03B77CD0321387543C9FAA05456C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BBBD2BB9673CAF3A4E0487CD0C79CE90 /* CodableModel.swift */,
+				F62E07EF254D987606418B8171F35FF2 /* Errors.swift */,
+				30BE829A0A7E3BB4A7BD77692FCE401F /* Request.swift */,
+				8EB9D5A290696DC13B91782C177EA661 /* Result.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		7EBAB9C9B818AFED88F100E778563964 /* Pods-CoinSwitchAPI_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2DBA69001F90AC35082998CD88765BF /* Pods-CoinSwitchAPI_Tests.modulemap */,
+				AF07F7C37424B5F0A7CA3F2AB271FAF4 /* Pods-CoinSwitchAPI_Tests-acknowledgements.markdown */,
+				CAE7423CF36C8F27C11E02031289F186 /* Pods-CoinSwitchAPI_Tests-acknowledgements.plist */,
+				95D4AECA4D506E3E3B0D859DCFA12D9A /* Pods-CoinSwitchAPI_Tests-dummy.m */,
+				3098A56BCACECC85E852F072C004C763 /* Pods-CoinSwitchAPI_Tests-Info.plist */,
+				859F4581E0F19641319F4D71306FFE78 /* Pods-CoinSwitchAPI_Tests-umbrella.h */,
+				A6F4B5A8B4D3E53EE178DCDB12A6CE6D /* Pods-CoinSwitchAPI_Tests.debug.xcconfig */,
+				D0EBA53FFB36714BCE6BE8C4EEFAB391 /* Pods-CoinSwitchAPI_Tests.release.xcconfig */,
+			);
+			name = "Pods-CoinSwitchAPI_Tests";
+			path = "Target Support Files/Pods-CoinSwitchAPI_Tests";
+			sourceTree = "<group>";
+		};
+		834658EEA82F3E041BAE1C8BDA586162 /* CoinSwitchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4D2DA4C95A6081088A6797832CADB1CE /* CoinSwitchAPI.swift */,
+				F3105A5978C0B4E7438A455C08452C1F /* Models */,
+				AFFD99611ECA4C5714B29D789805AAAF /* Pod */,
+				2B700855946F8495A8FAB703D8A9922C /* Request */,
+				40D1721B966C87975148BDD50BEFF4CD /* Support Files */,
+			);
+			name = CoinSwitchAPI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AB4CC8D4334C2BE907D7D4B011E654D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE365316A23A9D67871A64D9658651CF /* CoinpaprikaAPI.framework */,
+				F3BCDADAF8D94DA991BBE66CE740B281 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFFD99611ECA4C5714B29D789805AAAF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7DC349DCA363B728E040C860164987BB /* CoinSwitchAPI.podspec */,
+				5AA82F27A08CBD4CAE43CB971C92A13F /* LICENSE */,
+				3FAB34B5E56CAB784336B23C19238AC2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C10D89ABBF6C23019E39226A5CECAF66 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FE23E52201C5B235666392F518B8436 /* CoinpaprikaAPI.modulemap */,
+				D5BEC25A386E5CCE7643B18523C41C17 /* CoinpaprikaAPI.xcconfig */,
+				94C5D88212363E69D0812F36A7C9E216 /* CoinpaprikaAPI-dummy.m */,
+				213B4862F33CDB567F552B0E44A50DB4 /* CoinpaprikaAPI-Info.plist */,
+				7A5290A9337E98A2E9362F6122AA7A5A /* CoinpaprikaAPI-prefix.pch */,
+				FB14A797C9C5E4054D5F632754F3124B /* CoinpaprikaAPI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CoinpaprikaAPI";
+			sourceTree = "<group>";
+		};
+		C14258D7B19808FFCFA968DA7573A082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				380C6C9115B092FE0DD7D989236471DC /* CoinpaprikaAPI */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1AC1C0F2038879AFDCA122439984F58E /* Development Pods */,
+				AB4CC8D4334C2BE907D7D4B011E654D2 /* Frameworks */,
+				C14258D7B19808FFCFA968DA7573A082 /* Pods */,
+				FD925EAB2BD46BD2489B8BE8DE8E73EA /* Products */,
+				E7D7F4A9AC300D5B36AD01184EBF8FFA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E7D7F4A9AC300D5B36AD01184EBF8FFA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1EF386F14E62D7C6D6858B3A13CA2 /* Pods-CoinSwitchAPI_Example */,
+				7EBAB9C9B818AFED88F100E778563964 /* Pods-CoinSwitchAPI_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F1D1EF386F14E62D7C6D6858B3A13CA2 /* Pods-CoinSwitchAPI_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D1164B00DF05485F84A2501693F83C0D /* Pods-CoinSwitchAPI_Example.modulemap */,
+				744AC8DF72C849576A504BF54AB71F3E /* Pods-CoinSwitchAPI_Example-acknowledgements.markdown */,
+				BBD8262D726538BD87E716D51BBBC353 /* Pods-CoinSwitchAPI_Example-acknowledgements.plist */,
+				DBCDC118445AF1DF57440EB8163D3EB5 /* Pods-CoinSwitchAPI_Example-dummy.m */,
+				1E78D0DB31F4C1851D11019A1E53D7E6 /* Pods-CoinSwitchAPI_Example-frameworks.sh */,
+				9313C3FD6BBF5BCED2C0E3B8E0AC2682 /* Pods-CoinSwitchAPI_Example-Info.plist */,
+				9F27ED7EC46305846AA1237EF9007BB5 /* Pods-CoinSwitchAPI_Example-umbrella.h */,
+				F210F8313860C544837FBBF89E5F125B /* Pods-CoinSwitchAPI_Example.debug.xcconfig */,
+				E86C2E5EC0249FA0DAF950977CB63DFB /* Pods-CoinSwitchAPI_Example.release.xcconfig */,
+			);
+			name = "Pods-CoinSwitchAPI_Example";
+			path = "Target Support Files/Pods-CoinSwitchAPI_Example";
+			sourceTree = "<group>";
+		};
+		F3105A5978C0B4E7438A455C08452C1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06776FF9F6A108641B138CB4B820837A /* Coin.swift */,
+				D95C22C2228ABD6E00B86E5D /* Pair.swift */,
+				D95C22C4228ABDA600B86E5D /* Rate.swift */,
+				4AE3EA59D476A7D1BB66970D57E36143 /* Order.swift */,
+				FFB5E00D647C796EBA6E9FA556DACEDB /* NewOrder.swift */,
+				D95C22C8228AC02200B86E5D /* NewOrderParams.swift */,
+				D95C22C6228ABE5E00B86E5D /* Account.swift */,
+				D95C22D0228AD40C00B86E5D /* ItemsList.swift */,
+			);
+			name = Models;
+			path = CoinSwitchAPI/Classes/Models;
+			sourceTree = "<group>";
+		};
+		F3BCDADAF8D94DA991BBE66CE740B281 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D050DEB17C209CDCB87163F6F1C0566E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FD925EAB2BD46BD2489B8BE8DE8E73EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5F992F348C18E1C75F19D404BF1BF1B /* CoinpaprikaAPI.framework */,
+				F07003E2C7E1714C52568C1D857C33D9 /* CoinSwitchAPI.framework */,
+				0BBBE74E12AF7939AF597A59855BA2D6 /* Pods_CoinSwitchAPI_Example.framework */,
+				1D4D14F332AA357D471EE688306B73B4 /* Pods_CoinSwitchAPI_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BB790BB244A89F7CBF1BA7381E84DCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473CEEFE641878A158A361A60E286FCB /* CoinpaprikaAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADD93201FACE431B1767B1E0E0CEEDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF09B2B3644C57C3EFE636F05A58B867 /* Pods-CoinSwitchAPI_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD32421BF9629DB1A730CA45732F2E00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC21B5CD3F775C70FCE21B0A1D3A0C23 /* Pods-CoinSwitchAPI_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C821D62E66FA40D9D3F2CFA424270747 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F021D867C99F076D85210576CE85B1F /* CoinSwitchAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73F9FBEF3C17D92A958CCC2DE8DB82D7 /* CoinpaprikaAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97DEC8877BEE240560DCCDA7C79772EA /* Build configuration list for PBXNativeTarget "CoinpaprikaAPI" */;
+			buildPhases = (
+				2BB790BB244A89F7CBF1BA7381E84DCD /* Headers */,
+				151953FAC4174BCC5FFD84A318BE1475 /* Sources */,
+				0B1272EBA627C0BCA1CF41E5F30B3B39 /* Frameworks */,
+				134BCE58CE0348B20DF87DBC2F00AF98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinpaprikaAPI;
+			productName = CoinpaprikaAPI;
+			productReference = F5F992F348C18E1C75F19D404BF1BF1B /* CoinpaprikaAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C5942A646EA1EE37F9DA52D56A3EF89 /* CoinSwitchAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D13F5D1F1C70D294A92491EE8F259C9 /* Build configuration list for PBXNativeTarget "CoinSwitchAPI" */;
+			buildPhases = (
+				C821D62E66FA40D9D3F2CFA424270747 /* Headers */,
+				8EC0DA1932E624FE727C2FA6A06D849F /* Sources */,
+				814963921ABDA8D1F9239DDA3E88CCA0 /* Frameworks */,
+				D660B5D227A529664DFC0009D6CB339E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4566B1B12FD16DA85D37F419100F7779 /* PBXTargetDependency */,
+			);
+			name = CoinSwitchAPI;
+			productName = CoinSwitchAPI;
+			productReference = F07003E2C7E1714C52568C1D857C33D9 /* CoinSwitchAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F70FBC5EA7ACED1E281E02BC97316AF /* Pods-CoinSwitchAPI_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040F98357D1537650E6A6B38F8417A49 /* Build configuration list for PBXNativeTarget "Pods-CoinSwitchAPI_Example" */;
+			buildPhases = (
+				AD32421BF9629DB1A730CA45732F2E00 /* Headers */,
+				8795A0E9749D8B4C8D4BE8C8C72E4D93 /* Sources */,
+				C494EEBC3216C8819430D0532E90881A /* Frameworks */,
+				F338A8AADCB1B1E85B17D740C8E4737E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C934CB9E617DA90BC745AC61D1FB333 /* PBXTargetDependency */,
+				5BA773F5BFA09E9574874A9AFB17C740 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoinSwitchAPI_Example";
+			productName = "Pods-CoinSwitchAPI_Example";
+			productReference = 0BBBE74E12AF7939AF597A59855BA2D6 /* Pods_CoinSwitchAPI_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C245F1ED9B13690065974D821321360A /* Pods-CoinSwitchAPI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8042E2AC5C68BB1B4F4A37315259E05 /* Build configuration list for PBXNativeTarget "Pods-CoinSwitchAPI_Tests" */;
+			buildPhases = (
+				5ADD93201FACE431B1767B1E0E0CEEDC /* Headers */,
+				70C8CCC87C193455C7649BED88AFE381 /* Sources */,
+				645F06D51E5651C87B9F8B74EB23FE69 /* Frameworks */,
+				16BBF2FEB230B3A7E60A6D08AF9D01C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667234CFB21BFC157C265F06A6433819 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoinSwitchAPI_Tests";
+			productName = "Pods-CoinSwitchAPI_Tests";
+			productReference = 1D4D14F332AA357D471EE688306B73B4 /* Pods_CoinSwitchAPI_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FD925EAB2BD46BD2489B8BE8DE8E73EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73F9FBEF3C17D92A958CCC2DE8DB82D7 /* CoinpaprikaAPI */,
+				7C5942A646EA1EE37F9DA52D56A3EF89 /* CoinSwitchAPI */,
+				8F70FBC5EA7ACED1E281E02BC97316AF /* Pods-CoinSwitchAPI_Example */,
+				C245F1ED9B13690065974D821321360A /* Pods-CoinSwitchAPI_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134BCE58CE0348B20DF87DBC2F00AF98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16BBF2FEB230B3A7E60A6D08AF9D01C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D660B5D227A529664DFC0009D6CB339E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338A8AADCB1B1E85B17D740C8E4737E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		151953FAC4174BCC5FFD84A318BE1475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0104C18425BA5D1D17F9133DF38CD380 /* CodableModel.swift in Sources */,
+				6BF58D8E6D074DCCED16749C0AC5D22E /* CoinpaprikaAPI-dummy.m in Sources */,
+				9E103F8B0B9FB8E141399C416C7D14EC /* Errors.swift in Sources */,
+				F6BD737729AC48CCE0207E40E28C9084 /* Request.swift in Sources */,
+				9E8C5AD7DDAE4566B6AD13807862610D /* Result.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C8CCC87C193455C7649BED88AFE381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA27F74CD81BADDA3D3EE7C76244D3C /* Pods-CoinSwitchAPI_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8795A0E9749D8B4C8D4BE8C8C72E4D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D0B4E894293712D0C509CC3AD9FAF7 /* Pods-CoinSwitchAPI_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC0DA1932E624FE727C2FA6A06D849F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305C8F934652E94070CA21A0C5ADE1C /* CoinSwitchAPI.swift in Sources */,
+				D95C22C7228ABE5E00B86E5D /* Account.swift in Sources */,
+				1D5BF4DF26F8E47776DD98338EE18C8E /* CoinSwitchAPI-dummy.m in Sources */,
+				D95C22CF228ACC8E00B86E5D /* Error.swift in Sources */,
+				E519C3CCE3C1D1AF36E0863E2A0F41A6 /* Credentials.swift in Sources */,
+				D95C22C5228ABDA600B86E5D /* Rate.swift in Sources */,
+				D95C22D1228AD40C00B86E5D /* ItemsList.swift in Sources */,
+				D95C22C9228AC02200B86E5D /* NewOrderParams.swift in Sources */,
+				D95C22CD228ACA4100B86E5D /* CoinSwitchRequest.swift in Sources */,
+				8F56E1F9D7FCDFBCCD23EDF4DE8946AE /* Coin.swift in Sources */,
+				D95C22CB228AC3DF00B86E5D /* Envelope.swift in Sources */,
+				D95C22C3228ABD6E00B86E5D /* Pair.swift in Sources */,
+				898EB62F4D92057DECE50BB5EE687D82 /* Order.swift in Sources */,
+				F848975BAE4608EB2507B36953F457A1 /* NewOrder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C934CB9E617DA90BC745AC61D1FB333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoinSwitchAPI;
+			target = 7C5942A646EA1EE37F9DA52D56A3EF89 /* CoinSwitchAPI */;
+			targetProxy = CABFDACEB7D4A93680C8C549B0766616 /* PBXContainerItemProxy */;
+		};
+		4566B1B12FD16DA85D37F419100F7779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoinpaprikaAPI;
+			target = 73F9FBEF3C17D92A958CCC2DE8DB82D7 /* CoinpaprikaAPI */;
+			targetProxy = 2EF2CE89BFF96C4D6345A8B7E66D02C2 /* PBXContainerItemProxy */;
+		};
+		5BA773F5BFA09E9574874A9AFB17C740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoinpaprikaAPI;
+			target = 73F9FBEF3C17D92A958CCC2DE8DB82D7 /* CoinpaprikaAPI */;
+			targetProxy = C314BF68DD19768AE4D0E3B38E9C93CD /* PBXContainerItemProxy */;
+		};
+		667234CFB21BFC157C265F06A6433819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoinSwitchAPI_Example";
+			target = 8F70FBC5EA7ACED1E281E02BC97316AF /* Pods-CoinSwitchAPI_Example */;
+			targetProxy = 293923E812590E5E91CB7E8C1EAAE43B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		080BD5B0B1736189438D2C93ADD404EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F210F8313860C544837FBBF89E5F125B /* Pods-CoinSwitchAPI_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoinSwitchAPI_Example/Pods-CoinSwitchAPI_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoinSwitchAPI_Example/Pods-CoinSwitchAPI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2BAD700B8E15CF117359EE171F784862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B2EC0A12489D453C94B24C3E11EBF9 /* CoinSwitchAPI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoinSwitchAPI/CoinSwitchAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoinSwitchAPI/CoinSwitchAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CoinSwitchAPI/CoinSwitchAPI.modulemap";
+				PRODUCT_MODULE_NAME = CoinSwitchAPI;
+				PRODUCT_NAME = CoinSwitchAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B0C839F0CFDBE2A1712E9C6AE2C2C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B2EC0A12489D453C94B24C3E11EBF9 /* CoinSwitchAPI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoinSwitchAPI/CoinSwitchAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoinSwitchAPI/CoinSwitchAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CoinSwitchAPI/CoinSwitchAPI.modulemap";
+				PRODUCT_MODULE_NAME = CoinSwitchAPI;
+				PRODUCT_NAME = CoinSwitchAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7508B910424EBD61D227E05E022DCFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F4B5A8B4D3E53EE178DCDB12A6CE6D /* Pods-CoinSwitchAPI_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoinSwitchAPI_Tests/Pods-CoinSwitchAPI_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoinSwitchAPI_Tests/Pods-CoinSwitchAPI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B6B716001027F0ECF003F5C2439333F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BEC25A386E5CCE7643B18523C41C17 /* CoinpaprikaAPI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoinpaprikaAPI/CoinpaprikaAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoinpaprikaAPI/CoinpaprikaAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CoinpaprikaAPI/CoinpaprikaAPI.modulemap";
+				PRODUCT_MODULE_NAME = CoinpaprikaAPI;
+				PRODUCT_NAME = CoinpaprikaAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC791E4597DE39AB4B5974248082B423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BEC25A386E5CCE7643B18523C41C17 /* CoinpaprikaAPI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoinpaprikaAPI/CoinpaprikaAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoinpaprikaAPI/CoinpaprikaAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CoinpaprikaAPI/CoinpaprikaAPI.modulemap";
+				PRODUCT_MODULE_NAME = CoinpaprikaAPI;
+				PRODUCT_NAME = CoinpaprikaAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BB66799700E5D560ACF3114A892F8E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EBA53FFB36714BCE6BE8C4EEFAB391 /* Pods-CoinSwitchAPI_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoinSwitchAPI_Tests/Pods-CoinSwitchAPI_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoinSwitchAPI_Tests/Pods-CoinSwitchAPI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED76271412BADB867310F06E7C0234E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86C2E5EC0249FA0DAF950977CB63DFB /* Pods-CoinSwitchAPI_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoinSwitchAPI_Example/Pods-CoinSwitchAPI_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoinSwitchAPI_Example/Pods-CoinSwitchAPI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040F98357D1537650E6A6B38F8417A49 /* Build configuration list for PBXNativeTarget "Pods-CoinSwitchAPI_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080BD5B0B1736189438D2C93ADD404EF /* Debug */,
+				ED76271412BADB867310F06E7C0234E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D13F5D1F1C70D294A92491EE8F259C9 /* Build configuration list for PBXNativeTarget "CoinSwitchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0C839F0CFDBE2A1712E9C6AE2C2C5E /* Debug */,
+				2BAD700B8E15CF117359EE171F784862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97DEC8877BEE240560DCCDA7C79772EA /* Build configuration list for PBXNativeTarget "CoinpaprikaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC791E4597DE39AB4B5974248082B423 /* Debug */,
+				9B6B716001027F0ECF003F5C2439333F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8042E2AC5C68BB1B4F4A37315259E05 /* Build configuration list for PBXNativeTarget "Pods-CoinSwitchAPI_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7508B910424EBD61D227E05E022DCFE6 /* Debug */,
+				BB66799700E5D560ACF3114A892F8E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

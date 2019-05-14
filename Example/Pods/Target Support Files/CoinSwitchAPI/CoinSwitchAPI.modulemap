@@ -1,0 +1,6 @@
+framework module CoinSwitchAPI {
+  umbrella header "CoinSwitchAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
