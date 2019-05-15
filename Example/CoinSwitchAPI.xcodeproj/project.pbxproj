@@ -313,13 +313,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CoinSwitchAPI_Example/Pods-CoinSwitchAPI_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CoinSwitchAPI/CoinSwitchAPI.framework",
-				"${BUILT_PRODUCTS_DIR}/CoinpaprikaAPI/CoinpaprikaAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/CoinSwitchAPI/CoinSwitch.framework",
+				"${BUILT_PRODUCTS_DIR}/CoinpaprikaAPI/Coinpaprika.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoinSwitchAPI.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoinpaprikaAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoinSwitch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Coinpaprika.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

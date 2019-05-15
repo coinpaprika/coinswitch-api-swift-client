@@ -8,13 +8,16 @@
 import Foundation
 
 public struct Credentials {
+    /// API Key
     public let key: String
-    public let ip: String
+    
+    /// Client IP
+    public let ip: String?
 
     internal func asHeaders() -> [String: String] {
-        return [
-            "x-api-key": key,
-            "x-user-ip": ip
-        ]
+        var headers = [String: String]()
+        headers["x-api-key"] = key
+        headers["x-user-ip"] = ip
+        return headers
     }
 }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double CoinSwitchAPIVersionNumber;
-FOUNDATION_EXPORT const unsigned char CoinSwitchAPIVersionString[];
+FOUNDATION_EXPORT double CoinSwitchVersionNumber;
+FOUNDATION_EXPORT const unsigned char CoinSwitchVersionString[];
 

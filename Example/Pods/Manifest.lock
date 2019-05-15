@@ -1,5 +1,5 @@
 PODS:
-  - CoinpaprikaAPI/Networking (2.1.1)
+  - CoinpaprikaAPI/Networking (2.2)
   - CoinSwitchAPI (1.0):
     - CoinpaprikaAPI/Networking
 
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoinpaprikaAPI: a64a077ddebafc2b926230307ce0f715a8a91cee
-  CoinSwitchAPI: 293b8624939f29be6fc6f259cf1dee53658fb9a4
+  CoinpaprikaAPI: 30093dd2ece7d8ecea8c0d8671f704e7a6095f0b
+  CoinSwitchAPI: 8dcbf61a69505dc7be609cd40e5fee580ca3ba7c
 
 PODFILE CHECKSUM: 4a7224f421a87c044557234cc3086cb2d4ca9d62
 

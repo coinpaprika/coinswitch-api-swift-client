@@ -161,12 +161,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CoinSwitchAPI/CoinSwitchAPI.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CoinpaprikaAPI/CoinpaprikaAPI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CoinSwitchAPI/CoinSwitch.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CoinpaprikaAPI/Coinpaprika.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CoinSwitchAPI/CoinSwitchAPI.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CoinpaprikaAPI/CoinpaprikaAPI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CoinSwitchAPI/CoinSwitch.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CoinpaprikaAPI/Coinpaprika.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

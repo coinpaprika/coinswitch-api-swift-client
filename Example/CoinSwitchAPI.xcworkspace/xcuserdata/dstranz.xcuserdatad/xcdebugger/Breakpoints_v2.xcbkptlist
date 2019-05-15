@@ -22,46 +22,46 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CoinpaprikaAPI.Request.(findFailureReason in _BF667AC359492F16E155B8B1535C8524)(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; CoinpaprikaAPI.ResponseError"
-                  moduleName = "CoinpaprikaAPI"
+                  symbolName = "Coinpaprika.Request.(findFailureReason in _C0D94E1DD658F2954E64F4A914671D79)(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; Coinpaprika.ResponseError"
+                  moduleName = "Coinpaprika"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dstranz/iOS/CoinSwitchAPI/Example/Pods/CoinpaprikaAPI/CoinpaprikaAPI/Classes/Networking/Request.swift"
-                  timestampString = "579523783.733978"
+                  timestampString = "579624871.8989969"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "205"
                   endingLineNumber = "205"
-                  offsetFromSymbolStart = "413">
+                  offsetFromSymbolStart = "572">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CoinpaprikaAPI.Request.(findFailureReason in _BF667AC359492F16E155B8B1535C8524)(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; CoinpaprikaAPI.ResponseError"
-                  moduleName = "CoinpaprikaAPI"
+                  symbolName = "Coinpaprika.Request.(findFailureReason in _C0D94E1DD658F2954E64F4A914671D79)(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; Coinpaprika.ResponseError"
+                  moduleName = "Coinpaprika"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dstranz/iOS/CoinSwitchAPI/Example/Pods/CoinpaprikaAPI/CoinpaprikaAPI/Classes/Networking/Request.swift"
-                  timestampString = "579523783.737832"
+                  timestampString = "579624871.901562"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "205"
                   endingLineNumber = "205"
-                  offsetFromSymbolStart = "445">
+                  offsetFromSymbolStart = "604">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CoinpaprikaAPI.Request.(findFailureReason in _BF667AC359492F16E155B8B1535C8524)(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; CoinpaprikaAPI.ResponseError"
-                  moduleName = "CoinpaprikaAPI"
+                  symbolName = "Coinpaprika.Request.(findFailureReason in _C0D94E1DD658F2954E64F4A914671D79)(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; Coinpaprika.ResponseError"
+                  moduleName = "Coinpaprika"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dstranz/iOS/CoinSwitchAPI/Example/Pods/CoinpaprikaAPI/CoinpaprikaAPI/Classes/Networking/Request.swift"
-                  timestampString = "579523783.741249"
+                  timestampString = "579624871.904843"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "205"
                   endingLineNumber = "205"
-                  offsetFromSymbolStart = "535">
+                  offsetFromSymbolStart = "1011">
                </Location>
             </Locations>
          </BreakpointContent>

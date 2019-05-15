@@ -9,14 +9,14 @@
 import Foundation
 
 public protocol Requestable {
-    associatedtype Model: Codable & CodableModel
+    associatedtype Model: Decodable
     func perform(responseQueue: DispatchQueue?, cachePolicy: URLRequest.CachePolicy?, _ callback: @escaping (Result<Model, Error>) -> Void)
 }
 
+
 /// Request representation returned by CoinpaprikaAPI methods.
 /// To perform request use .perform() method. It will call callback with error reason or
-public struct Request<Model: Codable & CodableModel>: Requestable {
-    
+public struct Request<Model: Decodable>: Requestable {
     private let baseUrl: URL
     
     public enum Method: String {
@@ -112,14 +112,14 @@ public struct Request<Model: Codable & CodableModel>: Requestable {
                 
                 guard let data = data else {
                     onQueue {
-                        callback(Result.failure(ResponseError.emptyResponse))
+                        callback(Result.failure(ResponseError.emptyResponse(url: httpResponse.url)))
                     }
                     return
                 }
                 
                 guard let value = self.decodeResponse(data) else {
                     onQueue {
-                        callback(Result.failure(ResponseError.unableToDecodeResponse))
+                        callback(Result.failure(ResponseError.unableToDecodeResponse(url: httpResponse.url)))
                     }
                     return
                 }
@@ -199,44 +199,49 @@ public struct Request<Model: Codable & CodableModel>: Requestable {
 
     private func findFailureReason(data: Data?, response: URLResponse?) -> ResponseError {
         guard let response = response as? HTTPURLResponse else {
-            return .emptyResponse
+            return .emptyResponse(url: nil)
         }
         
         switch response.statusCode {
         case 429:
-            return .requestsLimitExceeded
+            return .requestsLimitExceeded(url: response.url)
         case 400 ..< 500:
             let decoder = JSONDecoder()
             if let data = data, let value = try? decoder.decode(APIError.self, from: data) {
-                return .invalidRequest(httpCode: response.statusCode, message: value.error)
+                return .invalidRequest(httpCode: response.statusCode, url: response.url, message: value.error)
             }
             
-            return .invalidRequest(httpCode: response.statusCode, message: nil)
+            return .invalidRequest(httpCode: response.statusCode, url: response.url, message: nil)
         default: break
         }
         
-        return .serverError(httpCode: response.statusCode)
+        return .serverError(httpCode: response.statusCode, url: response.url)
     }
     
     private func decodeResponse(_ data: Data) -> Model? {
-        let decoder = Model.decoder
-        
         do {
             return try decoder.decode(Model.self, from: data)
         } catch DecodingError.dataCorrupted(let context) {
-            assertionFailure("\(Model.self): \(context.debugDescription) from \(debugDecodeData(data))")
+            assertionFailure("\(Model.self): \(context.debugDescription) in \(context.codingPath) from \(debugDecodeData(data))")
         } catch DecodingError.keyNotFound(let key, let context) {
-            assertionFailure("\(Model.self): \(key.stringValue) was not found, \(context.debugDescription) from \(debugDecodeData(data))")
+            assertionFailure("\(Model.self): \(key.stringValue) was not found, \(context.debugDescription) in \(context.codingPath) from \(debugDecodeData(data))")
         } catch DecodingError.typeMismatch(let type, let context) {
-            dump(context.codingPath)
-            assertionFailure("\(Model.self): \(type) was expected, \(context.debugDescription) from \(debugDecodeData(data))")
+            assertionFailure("\(Model.self): \(type) was expected, \(context.debugDescription) in \(context.codingPath) from \(debugDecodeData(data))")
         } catch DecodingError.valueNotFound(let type, let context) {
-            assertionFailure("\(Model.self): no value was found for \(type), \(context.debugDescription) from \(debugDecodeData(data))")
+            assertionFailure("\(Model.self): no value was found for \(type), \(context.debugDescription) in \(context.codingPath) from \(debugDecodeData(data))")
         } catch {
             assertionFailure("\(Model.self): unknown decoding error from \(debugDecodeData(data))")
         }
         
         return nil
+    }
+    
+    private var decoder: JSONDecoder {
+        guard let decodableModel = Model.self as? DecodableModel.Type else {
+            return JSONDecoder()
+        }
+        
+        return decodableModel.decoder
     }
     
     private func debugDecodeData(_ data: Data) -> String {

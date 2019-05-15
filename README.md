@@ -12,7 +12,9 @@
 ## Example
 
 ```swift
-let client = CoinSwitchAPI(key: "{YOUR_API_KEY}", ip: "{YOUR_API_SECRET}")
+import CoinSwitch
+
+let client = CoinSwitch.API(key: "{YOUR_API_KEY}", ip: "{YOUR_API_SECRET}")
 client.getCoins().perform  { result in
 do {
 let coins = try? result.get()

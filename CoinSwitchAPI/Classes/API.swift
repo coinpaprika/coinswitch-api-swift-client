@@ -6,13 +6,15 @@
 //
 
 import Foundation
-import CoinpaprikaAPI
+import Coinpaprika
 
-public struct CoinSwitchAPI {
+public typealias CoinSwitchAPI = API
+
+public struct API {
     private let credentials: Credentials
     private let baseUrl: URL = URL(string: "https://api.coinswitch.co/v2")!
     
-    public init(key: String, userIp: String) {
+    public init(key: String, userIp: String? = nil) {
         self.credentials = Credentials(key: key, ip: userIp)
     }
     

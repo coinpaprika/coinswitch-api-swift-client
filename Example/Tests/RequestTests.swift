@@ -1,5 +1,5 @@
 import XCTest
-import CoinSwitchAPI
+import CoinSwitch
 
 class Tests: XCTestCase {
     

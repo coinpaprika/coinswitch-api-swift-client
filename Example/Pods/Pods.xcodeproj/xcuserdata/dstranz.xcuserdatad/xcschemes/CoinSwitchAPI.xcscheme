@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C5942A646EA1EE37F9DA52D56A3EF89"
-               BuildableName = "CoinSwitchAPI.framework"
+               BuildableName = "CoinSwitch.framework"
                BlueprintName = "CoinSwitchAPI"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C5942A646EA1EE37F9DA52D56A3EF89"
-            BuildableName = "CoinSwitchAPI.framework"
+            BuildableName = "CoinSwitch.framework"
             BlueprintName = "CoinSwitchAPI"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

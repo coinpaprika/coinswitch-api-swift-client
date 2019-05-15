@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoinpaprikaAPI
+import Coinpaprika
 
 internal struct Envelope<Model: Codable>: Codable, CodableModel {
     public let success: Bool

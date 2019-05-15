@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoinpaprikaAPI
+import Coinpaprika
 
 public struct CoinSwitchRequest<Model: Codable> {
     let request: Request<Envelope<Model>>
@@ -24,7 +24,7 @@ public struct CoinSwitchRequest<Model: Codable> {
                 } else if let message = envelope.msg {
                     callback(Result.failure(CoinSwitchError.from(code: envelope.code, message: message)))
                 } else {
-                    callback(Result.failure(ResponseError.unableToDecodeResponse))
+                    callback(Result.failure(ResponseError.unableToDecodeResponse(url: nil)))
                 }
             case .failure(let error):
                 callback(Result.failure(error))
