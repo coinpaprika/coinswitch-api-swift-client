@@ -8,7 +8,7 @@
 import Foundation
 import Coinpaprika
 
-internal struct Envelope<Model: Codable>: Codable, CodableModel {
+public struct Envelope<Model: Codable>: Codable, CodableModel {
     public let success: Bool
     public let code: String
     public let data: Model?
