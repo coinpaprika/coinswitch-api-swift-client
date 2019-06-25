@@ -6,7 +6,11 @@
 //
 
 import Foundation
+#if canImport(Networking)
+import Networking
+#else
 import Coinpaprika
+#endif
 
 public struct Envelope<Model: Codable>: Codable, CodableModel {
     public let success: Bool

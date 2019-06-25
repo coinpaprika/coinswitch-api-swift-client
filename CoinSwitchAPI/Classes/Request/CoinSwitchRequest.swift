@@ -6,7 +6,11 @@
 //
 
 import Foundation
+#if canImport(Networking)
+import Networking
+#else
 import Coinpaprika
+#endif
 
 public struct CoinSwitchRequest<Model: Codable> {
     let request: Request<Envelope<Model>>

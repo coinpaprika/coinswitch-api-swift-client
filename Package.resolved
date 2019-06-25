@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Coinpaprika",
+        "repositoryURL": "https://github.com/coinpaprika/coinpaprika-api-swift-client.git",
+        "state": {
+          "branch": null,
+          "revision": "514e1574d0f2cb0c5044073e56f49a7d48613d49",
+          "version": "2.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
