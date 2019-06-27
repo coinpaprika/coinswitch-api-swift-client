@@ -50,6 +50,17 @@ class Tests: XCTestCase {
         waitForExpectations(timeout: 30, handler: nil)
     }
     
+    func testRates() {
+        let expectation = self.expectation(description: "Waiting for API")
+        api.getRates(depositCoin: "btc", destinationCoin: "eth").perform { result in
+            let rates = try? result.get()
+            XCTAssertNotNil(rates)
+            XCTAssert(rates![0].minerFee > 0)
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 30, handler: nil)
+    }
+    
     func testNewOrder() {
         let expectation = self.expectation(description: "Waiting for API")
         api.createOrder(params: .init(depositCoin: "btc", destinationCoin: "eth", depositCoinAmount: 1, destinationAddress: .init(address: "0x37CfF9dce47511cC64b4D240070CfA1d7a5034D4", tag: nil))).perform { result in

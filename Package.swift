@@ -15,6 +15,11 @@ let package = Package(
             name: "CoinSwitch",
             dependencies: ["Networking"],
             path: "CoinSwitchAPI/Classes"
-         )
+         ),
+        .testTarget(
+            name: "CoinSwitchTests",
+            dependencies: ["CoinSwitch"],
+            path: "Example/Tests"
+        )
     ]
 )

@@ -40,6 +40,13 @@ public struct API {
         return CoinSwitchRequest<Rate>(baseUrl: baseUrl, method: .post, path: "rate", params: params, credentials: credentials)
     }
     
+    public func getRates(depositCoin: String?, destinationCoin: String?) -> CoinSwitchRequest<[CoinRate]> {
+        var params = [String: Any]()
+        params["depositCoin"] = depositCoin
+        params["destinationCoin"] = destinationCoin
+        return CoinSwitchRequest<[CoinRate]>(baseUrl: baseUrl, method: .post, path: "bulk-rate", params: params, credentials: credentials)
+    }
+    
     public func createOrder(params: NewOrderParams) -> CoinSwitchRequest<NewOrder> {
         return CoinSwitchRequest<NewOrder>(baseUrl: baseUrl, method: .post, path: "order", params: params.asDictionary ?? [:], credentials: credentials)
     }
