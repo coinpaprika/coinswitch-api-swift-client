@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     s.name             = 'CoinSwitchAPI'
     s.module_name      = 'CoinSwitch'
-    s.version          = '1.1.3'
+    s.version          = '1.1.4'
     s.summary          = 'CoinSwitch - crypto to crypto exchange service - API client'
 
     s.description      = <<-DESC

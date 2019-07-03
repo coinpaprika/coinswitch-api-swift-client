@@ -16,10 +16,11 @@ public typealias CoinSwitchAPI = API
 
 public struct API {
     private let credentials: Credentials
-    private let baseUrl: URL = URL(string: "https://api.coinswitch.co/v2")!
+    private let baseUrl: URL
     
-    public init(key: String, userIp: String? = nil) {
+    public init(key: String, userIp: String? = nil, baseUrl: URL? = nil) {
         self.credentials = Credentials(key: key, ip: userIp)
+        self.baseUrl = baseUrl ?? URL(string: "https://api.coinswitch.co/v2")!
     }
     
     public func getCoins() -> CoinSwitchRequest<[Coin]> {
