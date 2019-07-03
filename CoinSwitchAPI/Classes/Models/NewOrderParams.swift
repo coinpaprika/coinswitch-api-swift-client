@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// New exchange transaction order
 public struct NewOrderParams: Codable {
     public let depositCoin: String
     public let destinationCoin: String
@@ -15,6 +16,12 @@ public struct NewOrderParams: Codable {
     public let destinationAddress: Account
     public let refundAddress: Account?
     
+    /// Create exchange transaction with fixed deposit coin amount
+    /// - Parameter depositCoin: deposit coin id
+    /// - Parameter destinationCoin: destination coin id
+    /// - Parameter depositCoinAmount: deposit - declared coin amount
+    /// - Parameter destinationAddress: destination address
+    /// - Parameter refundAddress: refund address (optional, required for UTXO based coins)
     public init(depositCoin: String, destinationCoin: String, depositCoinAmount: Decimal, destinationAddress: Account, refundAddress: Account? = nil) {
         self.depositCoin = depositCoin
         self.destinationCoin = destinationCoin
@@ -24,6 +31,12 @@ public struct NewOrderParams: Codable {
         self.refundAddress = refundAddress
     }
     
+    /// Create exchange transaction with desired destination coin amount
+    /// - Parameter depositCoin: deposit coin id
+    /// - Parameter destinationCoin: destination coin id
+    /// - Parameter destinationCoinAmount: destination - desired coin amount
+    /// - Parameter destinationAddress: destination address
+    /// - Parameter refundAddress: refund address (optional, required for UTXO based coins)
     public init(depositCoin: String, destinationCoin: String, destinationCoinAmount: Decimal, destinationAddress: Account, refundAddress: Account? = nil) {
         self.depositCoin = depositCoin
         self.destinationCoin = destinationCoin
