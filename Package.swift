@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "CoinSwitch",
-            dependencies: ["Networking"],
+            dependencies: ["CoinpaprikaNetworking"],
             path: "CoinSwitchAPI/Classes"
          ),
         .testTarget(

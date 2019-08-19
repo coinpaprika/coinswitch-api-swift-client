@@ -44,7 +44,6 @@ class Tests: XCTestCase {
         api.getRate(depositCoin: "btc", destinationCoin: "eth").perform { result in
             let rate = try? result.get()
             XCTAssertNotNil(rate)
-            XCTAssert(rate!.minerFee > 0)
             expectation.fulfill()
         }
         waitForExpectations(timeout: 30, handler: nil)
